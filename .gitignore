@@ -12,6 +12,6 @@
 .kitchen
 
 # Gemfile
-.Gemfile.lock
+Gemfile.lock
 
 .ruby-version
