@@ -9,7 +9,7 @@
 #*.tfvars
 
 # Kitchen
-.kitchen
+.kitchen/
 
 # Gemfile
 Gemfile.lock
