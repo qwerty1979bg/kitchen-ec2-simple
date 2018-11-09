@@ -1,0 +1,6 @@
+access_key = "${var.aws_access_key}"
+secret_key = "${var.aws_secret_key}"
+key_name = "macos"
+region = "us-east-1"
+ami = "ami-0f9351b59be17920e"
+instance_type = "t3.nano"

@@ -6,4 +6,12 @@
 *.tfstate.*
 
 # .tfvars files
-*.tfvars
+#*.tfvars
+
+# Kitchen
+.kitchen/
+
+# Gemfile
+Gemfile.lock
+
+.ruby-version
