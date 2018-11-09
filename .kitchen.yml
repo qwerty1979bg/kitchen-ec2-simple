@@ -1,0 +1,31 @@
+---
+driver:
+  name: terraform
+  variable_files:
+    - testing.tfvars
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: ubuntu
+
+transport:
+  name: ssh
+  ssh_key: ~/.ssh/id_rsa
+
+verifier:
+  name: terraform
+  format: doc
+  systems:
+    - name: default
+      show_progress: true
+      backend: ssh
+      controls:
+        - operating_system
+      user: ubuntu
+      hosts_output: public_dns
+      key_files:
+        - ~/.ssh/id_rsa
+suites:
+  - name: default
